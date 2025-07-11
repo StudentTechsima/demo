@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FFR Calendar</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background: #f0f0f0;
+    }
+
+    .calendar-container {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      width: 100%;
+      max-width: 900px;
+      margin: auto;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+
+    .calendar-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    .calendar-header h2 {
+      margin: 0;
+    }
+
+    .calendar {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      gap: 2px;
+    }
+
+    .day, .date {
+      background: #f9f9f9;
+      padding: 10px;
+      text-align: center;
+      border: 1px solid #ddd;
+      min-height: 80px;
+    }
+
+    .day {
+      background: #e0e0e0;
+      font-weight: bold;
+    }
+
+    .today {
+      background: #fcb954 !important;
+    }
+
+    .calendar .date p {
+      margin: 4px 0;
+      font-size: 12px;
+    }
+
+    .legend {
+      display: flex;
+      gap: 20px;
+      margin-top: 10px;
+    }
+
+    .legend span {
+      display: inline-block;
+      width: 15px;
+      height: 15px;
+      margin-right: 5px;
+    }
+
+    .weekend { background: #bcd; }
+    .holiday { background: #fdd; }
+    .leave { background: #ff9; }
+    .mtp { background: #c9c; }
+    .dcr { background: #9c9; }
+  </style>
+</head>
+<body>
+
+<div class="calendar-container">
+  <div class="calendar-header">
+    <h2>July 2025</h2>
+    <div>
+      <button>&lt;</button>
+      <button>&gt;</button>
+    </div>
+  </div>
+
+  <div class="calendar">
+    <!-- Week Days -->
+    <div class="day">Sun</div>
+    <div class="day">Mon</div>
+    <div class="day">Tue</div>
+    <div class="day">Wed</div>
+    <div class="day">Thu</div>
+    <div class="day">Fri</div>
+    <div class="day">Sat</div>
+
+    <!-- Dates with example content -->
+    <div class="date">29</div>
+    <div class="date">30</div>
+    <div class="date">1<p>Calls +</p><p>Plan +</p></div>
+    <div class="date today">2<p>Calls +</p><p>Plan +</p></div>
+    <div class="date">3<p>Calls +</p><p>Plan +</p></div>
+    <div class="date">4<p>Calls +</p><p>Plan +</p></div>
+    <div class="date">5<p>Calls +</p><p>Plan +</p></div>
+
+    <!-- Continue filling dates like this -->
+    <!-- ... -->
+
+    <div class="date">31<p>Calls +</p><p>Plan +</p></div>
+  </div>
+
+  <div class="legend">
+    <div><span class="weekend"></span> Weekend</div>
+    <div><span class="holiday"></span> Holiday</div>
+    <div><span class="leave"></span> Leave</div>
+    <div><span class="mtp"></span> MTP</div>
+    <div><span class="dcr"></span> DCR</div>
+  </div>
+</div>
+
+</body>
+</html>

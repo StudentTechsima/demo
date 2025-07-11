@@ -1,0 +1,122 @@
+		js Notes:-
+-------------------------
+History 
+Types of JS:-
+there are two types of use JS.
+1. Internal JS
+
+syntax:-
+
+html File:-
+<!doctype html>
+<html>
+	<head>
+		<script></script>//1st way 
+	</head>
+	<body>
+		<script></script>//2nd way
+	</body>
+</html>
+
+<script></script>// 3rd way
+
+way of use js :-
+
+1. use in js inner the head tag.
+2. use in js inner the body tag
+3. use in js outside the html code 
+
+where write the js code :-
+inner the script tag.
+2. External Js
+----------------
+syntax:-
+html file
+
+<html>
+	<head>
+		
+	</head>
+	<body>
+		<script src="js/script.js"></script>
+	</body>
+</html>
+js file
+
+alert("Techsima Solution PVT LTD");
+
+
+Output Method:-
+Window.alert()
+console.log()
+document.write()
+
+
+keyword:
+keyword is a reserve word.
+this is predefined word.
+this is used to the perform the specific task. 
+identifire:-
+a special word of the js . not a another time use in js code 
+syntax:-
+
+a=10;
+A=10;
+rules of identifire:
+variable :
+ variable is a container which store the value in memory address.
+ 
+ Syntax:-
+ 
+ var | let | const
+ 
+ var d="ram is a good boy";
+
+
+datatype:
+js Datatype : 
+
+Number:(float , integer)
+
+let a=20;
+let b=20.45;
+string
+
+let a="Ram"
+let b='a'
+let c="Ram is bad boy";
+
+
+boolean 
+
+let a=true;
+let b=false;
+
+
+object :
+
+let a=[20, 'a', true, "ram"];
+
+let a = {
+	name="ram";
+	rollno=101
+	isPass=true;
+}
+
+let a=null;
+
+
+null
+undefined
+
+let a;
+
+typeof() method 
+
+operator:
+
+
+input method :
+1. prompt method:
+
+

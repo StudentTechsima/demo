@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mega Menu Example</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 10px 20px;
+      position: relative;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav ul li {
+      position: relative;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: white;
+      padding: 10px 15px;
+      display: block;
+    }
+
+    /* Mega Menu Styles */
+    .mega-menu {
+      position: absolute;
+      left: 0;
+      top: 100%;
+      background: #f1f1f1;
+      padding: 20px;
+      display: none;
+      color: #000;
+      box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    }
+
+    .mega-menu .content {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .mega-menu .column {
+      flex: 1;
+      padding: 0 15px;
+    }
+
+    .mega-menu .column h3 {
+      margin-bottom: 10px;
+      font-size: 16px;
+      color: #333;
+    }
+
+    .mega-menu .column a {
+      display: block;
+      padding: 5px 0;
+      color: #333;
+      text-decoration: none;
+    }
+
+    .mega-menu .column a:hover {
+      color: #007BFF;
+    }
+
+    nav ul li:hover .mega-menu {
+      display: block;
+    }
+	
+	.mega-image{ 
+		height:100%;
+		width:200px;
+	}
+  </style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li>
+        <a href="#">Services ▾</a>
+        <div class="mega-menu">
+          <div class="content">
+            <div class="column">
+              <h3>Web Development</h3>
+              <a href="#">HTML</a>
+              <a href="#">CSS</a>
+              <a href="#">JavaScript</a>
+            </div>
+            <div class="column">
+              <h3>Design</h3>
+              <a href="#">UI/UX</a>
+              <a href="#">Photoshop</a>
+              <a href="#">Figma</a>
+            </div>
+            <div class="column">
+              <h3>Marketing</h3>
+              <a href="#">SEO</a>
+              <a href="#">Email Marketing</a>
+              <a href="#">Social Media</a>
+            </div>
+			<div class="column">
+              <img  class="mega-image" src="https://images.pexels.com/photos/1563356/pexels-photo-1563356.jpeg?cs=srgb&dl=pexels-thatguycraig000-1563356.jpg&fm=jpg" alt="dsbgshg">
+            </div>
+          </div>
+        </div>
+      </li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+</body>
+</html>

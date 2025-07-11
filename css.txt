@@ -1,0 +1,218 @@
+CSS: - Cascading Style Sheet 
+this is use to create a webpage or Website . CSS use for create a design , color , background , border , Typography  and many more .
+create a beautifull and attractive webpage design.
+
+Syntax:
+
+selector {
+	property:value;
+	property:value;
+}
+
+Types of CSS-
+three types of CSS.
+1. Inline CSS  
+
+<p style="property:value;property:value"></p>
+
+2. internal CSS
+
+Syntax:- 
+	<style>
+		#heading1{
+			property:value;
+			property:value;
+		}
+	</style>
+	<h1 id="heading1 "></h1>
+
+3. External CSS:-
+
+HTML FILE
+<!doctype html>
+<html>
+	<head>
+		<link href="style.css" rel="stylesheet"/> 
+	</head>
+	<body>
+		<div id="css_link"></div>
+	</body>
+</html> 
+CSS FILE( style.css)
+#css_link{
+	height:200px;
+	width: 200px;
+	border:2px solid #000;
+}
+
+
+
+
+
+
+Selector :- selector is a select the html tag are given in css using Selector.
+
+Types of selector - 
+
+id selector :this is used to the given a css selected uniqeuly.it's denoted by the # (hash Symbol). 
+Syntax:- 
+	<style>
+		#heading1{
+			property:value;
+			property:value;
+		}
+	</style>
+	<h1 id="heading1 "></h1>
+
+class selector
+tag selector
+group selector
+universal selector 
+
+
+color property: -
+
+color: normal color name( red ) , hexacode ( #ffffff;, #000000; #fff, #000,) , rgba( red , green , blue alpha (opacity(0-1))), hsla(Hue(0-360deg) Saturation(0- 100%), Lightness(0- 100%), alpha(0-1))
+
+0-255(256)
+
+comment:- /* This is a commentb format  */
+
+
+background property:-
+Background: normal color name( red ) , hexacode ( #ffffff;, #000000; #fff, #000,) , rgba( red , green , blue alpha (opacity(0-1))), hsla(Hue(0-360deg) Saturation(0- 100%), Lightness(0- 100%), alpha(0-1))
+
+
+Div tag :- 
+css property:-
+
+height: 100px;
+width: 100px;
+-----------------------------
+background:green;
+----------------------------
+border: border-width border-style border-color :  border work in inner side of division tag
+
+
+ex:- border:10px solid #ff0;
+
+border-style :-  solid double dashed dotted inset outset rigde groove;
+---------------------------------------------------------------
+outline : outline-width outline-style outline-color : outline works in outer side of Division tag.
+-----------------------------------------------------------------------
+
+float:left right; 
+
+
+border-radius:
+ex: border-radius:10px | 50%;
+
+text-align:left, right, center, justify; 
+
+line-height:20px | 50px;
+
+font-size: 10px; 30px 
+
+text-shadow:hvalue vvalue blur_amount Color_Value 
+
+text-transform: lowercase Uppercase Captilized
+
+margin & Padding :-
+
+margin are work outside the division ;
+padding are works on the inner side the division; 
+
+1st value p&M:-
+margin:10px;
+
+2nd value: 
+margin: 20px(top & bottom) 30px(left & Right) ;
+
+3 value :
+margin: 10px(top) 30px(left & Right) 40px(bottom);
+4 value :-
+margin:10px(top) 20px(right) 30px(bottom) 40px(left) 
+
+margin: 0px auto;
+
+box-shadow: hvalue  vvalue blur_amount spread_amount color_value inset/outset (deafult) 
+			10px 	10px  	4px        5px            #ff0        i/o
+
+font-family: 
+font-weight:
+font-style:
+text-decoration:
+
+
+form tag:-
+
+<form method="get| post" action="" enctype="multipart-data"  autocomplete="off| on" >
+<feildset>
+<legand>
+<input type="text| number| dob | email | color | file | date | month | week  | datetime-local | search  | hidden | pincode | password | radio | checkbox" value="value_name" | placeholder="Enter your name " name="name_value" required readonly disabled  id="id_name">
+
+<label for="id_name">
+<select>
+<option>
+<textarea rows="2" cols="2">
+
+
+universal selector:-
+
+syntax:
+
+*{
+	font-size:18px;
+	color:red;
+}
+
+
+position property:-
+
+position:static | realtive | absolute | fixed | sticky
+
+four side : left:0%| 100% | 0px 
+right
+top
+bottom
+
+hover property: it's called is class selector .
+this is crated by the :hover
+
+for ex:=
+#id_name:hover{
+
+	}
+.class_name:hover{
+
+}
+
+tag_name:hover{
+
+}
+
+ul li:hover {
+
+}
+
+transition:all ease 2s ;
+backgound image:-
+---------------
+background-image : url('images/image_name.jpg|png|jpeg');
+backgound-size:cover | contain;
+backgound-position:top | bottom | left | right | cenmter
+backgound-reapeat:reapeat | no-reapeat;
+backgound-attachment: scroll | fixed'
+
+
+backgound-image-
+
+backgound:linear-gradient(red,blue,black);
+
+
+transform property:- 
+
+transform:translate(10px 20px);
+		  translateX(10px)
+		  translateY(10px);
+

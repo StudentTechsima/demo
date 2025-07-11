@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FFReporting - Intas</title>
+  <style>
+	* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f2f2f2;
+}
+
+header {
+  background-color: #e0e0e0;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-size: 14px;
+  color: #333;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.menu-bar {
+  background-color: #0e66a1;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.menu-bar button {
+  background-color: white;
+  border: none;
+  padding: 6px 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 13px;
+}
+
+main {
+  display: flex;
+  padding: 10px;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.sidebar {
+  flex: 1 1 200px;
+  background-color: #fff6e0;
+  padding: 10px;
+  border: 1px solid #ddd;
+  font-size: 13px;
+}
+
+.sidebar table {
+  width: 100%;
+  margin-top: 10px;
+  border-collapse: collapse;
+}
+
+.sidebar th, .sidebar td {
+  border: 1px solid #aaa;
+  padding: 4px;
+  text-align: center;
+}
+
+.calendar {
+  flex: 3 1 600px;
+  background-color: white;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+}
+
+.day {
+  background-color: #eef6ff;
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 12px;
+  min-height: 60px;
+  box-shadow: 0 0 2px rgba(0,0,0,0.1);
+}
+
+.day span {
+  font-size: 11px;
+  color: green;
+}
+
+footer {
+  background-color: #ccc;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+  font-size: 13px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .calendar-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .menu-bar {
+    flex-direction: column;
+  }
+
+  .menu-bar button {
+    width: 100%;
+  }
+
+  main {
+    flex-direction: column;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">FFReporting</div>
+    <div class="user-info">
+      Welcome: Ratnakar Maurya (BE - FAIZABAD) | EmpCode: 280707 | Designation: SR. BE | Division: AYOKKA
+    </div>
+  </header>
+
+  <nav class="menu-bar">
+    <button>Home</button>
+    <button>Master</button>
+    <button>Submit</button>
+    <button>View</button>
+    <button>Communication</button>
+    <button>My Sales Detail</button>
+    <button>Utility</button>
+    <button>Reports</button>
+    <button>HR INDEX</button>
+    <button>Help</button>
+    <button>Logout</button>
+    <button>Patient</button>
+    <button>Pahal</button>
+    <button>DOBS</button>
+  </nav>
+
+  <main>
+    <aside class="sidebar">
+      <h3>Message/Alerts</h3>
+      <p><strong>Dear All,</strong></p>
+      <p>Please refer NEWSLETTER for tax advisory</p>
+      <p><strong>Team HR</strong></p>
+      <p>Briefing Meeting 25-26 June</p>
+      <table>
+        <thead><tr><th>DIV</th><th>ZONE</th><th>D</th></tr></thead>
+        <tbody>
+          <tr><td>AYOKKA</td><td>EAST</td><td>4-5</td></tr>
+          <tr><td>AYOKKA</td><td>NORTH</td><td>7-8</td></tr>
+          <tr><td>AYOKKA</td><td>WEST</td><td>15-16</td></tr>
+        </tbody>
+      </table>
+    </aside>
+
+    <section class="calendar">
+      <div class="calendar-header">
+        <h2>Jun-2025</h2>
+        <button>Submit MTP</button>
+      </div>
+
+      <div class="calendar-grid">
+        <!-- Example week row -->
+        <div class="day">Jun 1<br><span>Calls +</span></div>
+        <div class="day">Jun 2<br><span>FW:1.0<br>C = 6, D = 9<br>Plan +</span></div>
+        <div class="day">Jun 3<br><span>FW:1.0<br>C = 7, D = 10<br>Plan +</span></div>
+        <div class="day">Jun 4<br><span>FW:1.0<br>C = 5, D = 10<br>Plan +</span></div>
+        <!-- Add more days similarly -->
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Intas Pharmaceuticals Limited
+  </footer>
+</body>
+</html>

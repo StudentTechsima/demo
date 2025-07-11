@@ -1,0 +1,49 @@
+<html>
+	<head>
+		<title>Animation Property</title>
+		<style>
+			.animate{
+			height:200px;
+			width:200px;
+			background:red;
+			margin:100px auto;
+			animation-name:up_down;
+			transform:scale(.2);
+			animation-duration:2s;
+			animation-direction:alternate;
+			animation-iteration-count:infinite;
+			
+		}
+		
+		@keyframes up_down{
+			0%{
+				transform:scale(.5);
+				background:green;
+			}
+			20%{
+				transform:scale(.8);
+				background:teal;
+				
+			}
+			
+			50%{
+				transform:scale(1);
+				background:purple;
+			}
+			
+			75%{
+				transform:scale(1.5);
+				background:pink;
+			}
+			100%{
+				transform:scale(2);
+				background:gold;
+			}
+		}
+		</style>
+		
+	</head>
+	<body>
+		<div class="animate"></div>
+	</body>
+</html>
